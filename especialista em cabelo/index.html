@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transforme seus cabelos com a especialista em beleza feminina. Experiência premium, técnicas atualizadas e atendimento personalizado.">
+    <meta name="keywords" content="cabelos femininos, corte, coloração, reconstrução capilar, especialista em cabelos, tratamentos premium">
+    <meta name="author" content="Especialista em Cabelos Femininos">
+    <meta name="theme-color" content="#d4af37">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Transformação Capilar Premium | Especialista em Beleza Feminina">
+    <meta property="og:description" content="Desvende a beleza única dos seus cabelos com técnicas premium e atendimento personalizado.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/d4af37/ffffff?text=Especialista+em+Cabelos">
+    <meta property="og:url" content="https://www.seudominio.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Transformação Capilar Premium">
+    <meta name="twitter:description" content="Desvende a beleza única dos seus cabelos com técnicas premium.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/d4af37/ffffff?text=Especialista+em+Cabelos">
+    
+    <title>Transformação Capilar Premium | Especialista em Beleza Feminina</title>
+    
+    <style>
+        /* ========================================
+           RESET E VARIÁVEIS GLOBAIS
+           ======================================== */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-gold: #d4af37;
+            --color-champagne: #f7e8d8;
+            --color-white: #ffffff;
+            --color-black: #1a1a1a;
+            --color-rose-nude: #d4a5a5;
+            --color-text: #333333;
+            --color-light-gray: #f5f5f5;
+            --color-border: #e0d5c7;
+            
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            --transition-smooth: all 0.3s ease-in-out;
+            --transition-slow: all 0.6s ease-in-out;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--color-white);
+        }
+        
+        /* ========================================
+           TIPOGRAFIA
+           ======================================== */
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-black);
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h3 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+        
+        /* ========================================
+           LAYOUT GERAL
+           ======================================== */
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        @media (max-width: 768px) {
+            section {
+                padding: 50px 0;
+            }
+        }
+        
+        /* ========================================
+           HEADER E NAVEGAÇÃO
+           ======================================== */
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: var(--transition-smooth);
+        }
+        
+        header.scrolled {
+            padding: 10px 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--color-gold);
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 0.95rem;
+            font-weight: 500;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-gold);
+            transition: var(--transition-smooth);
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-header {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            color: var(--color-white);
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .cta-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--color-text);
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: var(--color-white);
+                padding: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav.active {
+                display: flex;
+            }
+            
+            nav a {
+                padding: 12px 0;
+                border-bottom: 1px solid var(--color-border);
+            }
+            
+            nav a::after {
+                display: none;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+        }
+        
+        /* ========================================
+           HERO SECTION
+           ======================================== */
+        
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(135deg, var(--color-champagne) 0%, var(--color-white) 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            padding: 80px 0;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text h1 {
+            color: var(--color-black);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .hero-text .subheadline {
+            font-size: 1.2rem;
+            color: var(--color-gold);
+            margin-bottom: 30px;
+            font-weight: 600;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        .hero-text p {
+            font-size: 1.05rem;
+            color: var(--color-text);
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+        
+        .btn {
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            color: var(--color-white);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-gold);
+            border: 2px solid var(--color-gold);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-gold);
+            color: var(--color-white);
+        }
+        
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 0.8s ease-out;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+        }
+        
+        .credibility-badges {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+        }
+        
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .badge-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .badge-text h4 {
+            font-size: 1rem;
+            margin: 0;
+            color: var(--color-black);
+        }
+        
+        .badge-text p {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            margin: 0;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 60px 0;
+            }
+        }
+        
+        /* ========================================
+           SEÇÃO DE AUTORIDADE
+           ======================================== */
+        
+        .authority {
+            background: var(--color-white);
+        }
+        
+        .authority-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .authority-image {
+            position: relative;
+        }
+        
+        .authority-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+        }
+        
+        .authority-content h2 {
+            color: var(--color-black);
+            margin-bottom: 30px;
+        }
+        
+        .authority-content h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--color-gold);
+            margin-top: 15px;
+            border-radius: 2px;
+        }
+        
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .experience-item h4 {
+            color: var(--color-gold);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .experience-item p {
+            color: var(--color-text);
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .authority-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        /* ========================================
+           SEÇÃO DE SERVIÇOS
+           ======================================== */
+        
+        .services {
+            background: linear-gradient(180deg, var(--color-white) 0%, var(--color-champagne) 100%);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            color: var(--color-black);
+            margin-bottom: 20px;
+        }
+        
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--color-gold);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--color-text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-card {
+            background: var(--color-white);
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: var(--transition-smooth);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid transparent;
+            cursor: pointer;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+            border-top-color: var(--color-gold);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: var(--color-white);
+            transition: var(--transition-smooth);
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .service-card h3 {
+            color: var(--color-black);
+            margin-bottom: 15px;
+        }
+        
+        .service-card p {
+            color: var(--color-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* ========================================
+           SEÇÃO DE BENEFÍCIOS
+           ======================================== */
+        
+        .benefits {
+            background: var(--color-white);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-item {
+            padding: 30px;
+            background: var(--color-light-gray);
+            border-radius: 12px;
+            text-align: center;
+            transition: var(--transition-smooth);
+            border-left: 4px solid var(--color-gold);
+        }
+        
+        .benefit-item:hover {
+            background: var(--color-champagne);
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-item h4 {
+            color: var(--color-black);
+            margin-bottom: 10px;
+        }
+        
+        .benefit-item p {
+            color: var(--color-text);
+            font-size: 0.95rem;
+        }
+        
+        /* ========================================
+           SEÇÃO ANTES E DEPOIS
+           ======================================== */
+        
+        .before-after {
+            background: linear-gradient(180deg, var(--color-champagne) 0%, var(--color-white) 100%);
+        }
+        
+        .before-after-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .comparison-card {
+            background: var(--color-white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition-smooth);
+        }
+        
+        .comparison-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 45px rgba(212, 175, 55, 0.2);
+        }
+        
+        .comparison-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            height: 300px;
+            position: relative;
+        }
+        
+        .comparison-images img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .comparison-label {
+            position: absolute;
+            top: 15px;
+            padding: 8px 16px;
+            background: rgba(0, 0, 0, 0.6);
+            color: var(--color-white);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .comparison-label.before {
+            left: 15px;
+        }
+        
+        .comparison-label.after {
+            right: 15px;
+        }
+        
+        .comparison-info {
+            padding: 25px;
+        }
+        
+        .comparison-info h4 {
+            color: var(--color-black);
+            margin-bottom: 10px;
+        }
+        
+        .comparison-info p {
+            color: var(--color-text);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .comparison-highlight {
+            color: var(--color-gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        /* ========================================
+           SEÇÃO DE DEPOIMENTOS
+           ======================================== */
+        
+        .testimonials {
+            background: var(--color-white);
+        }
+        
+        .testimonials-carousel {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background: var(--color-champagne);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+        .testimonial-card.active {
+            opacity: 1;
+            position: relative;
+            top: auto;
+            left: auto;
+        }
+        
+        .testimonial-stars {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+        
+        .testimonial-text {
+            font-size: 1.1rem;
+            color: var(--color-text);
+            margin-bottom: 25px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .testimonial-info h4 {
+            color: var(--color-black);
+            margin: 0 0 3px 0;
+            font-size: 1rem;
+        }
+        
+        .testimonial-info p {
+            color: var(--color-gold);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+        
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+        
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-border);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+        
+        .carousel-dot.active {
+            background: var(--color-gold);
+            width: 30px;
+            border-radius: 6px;
+        }
+        
+        /* ========================================
+           SEÇÃO DE ESTATÍSTICAS
+           ======================================== */
+        
+        .stats {
+            background: linear-gradient(135deg, var(--color-black) 0%, #2a2a2a 100%);
+            color: var(--color-white);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            color: var(--color-gold);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .stat-item p {
+            color: var(--color-champagne);
+            font-size: 1rem;
+        }
+        
+        /* ========================================
+           SEÇÃO DE PROCESSO
+           ======================================== */
+        
+        .process {
+            background: var(--color-white);
+        }
+        
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            position: relative;
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .process-step h4 {
+            color: var(--color-black);
+            margin-bottom: 15px;
+        }
+        
+        .process-step p {
+            color: var(--color-text);
+            font-size: 0.95rem;
+        }
+        
+        .step-arrow {
+            position: absolute;
+            top: 30px;
+            right: -25px;
+            font-size: 2rem;
+            color: var(--color-gold);
+            display: none;
+        }
+        
+        @media (min-width: 1024px) {
+            .process-timeline {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .process-step:not(:last-child) .step-arrow {
+                display: block;
+            }
+        }
+        
+        /* ========================================
+           SEÇÃO DE GALERIA
+           ======================================== */
+        
+        .gallery {
+            background: linear-gradient(180deg, var(--color-champagne) 0%, var(--color-white) 100%);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            height: 300px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition-smooth);
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 35px rgba(212, 175, 55, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(212, 175, 55, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition-smooth);
+            font-size: 2rem;
+            color: var(--color-white);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        /* ========================================
+           LIGHTBOX
+           ======================================== */
+        
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+        
+        .lightbox-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            font-size: 2rem;
+            color: var(--color-white);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+        
+        .lightbox-close:hover {
+            color: var(--color-gold);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* ========================================
+           SEÇÃO EMOCIONAL
+           ======================================== */
+        
+        .emotional-call {
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-rose-nude) 100%);
+            color: var(--color-white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .emotional-call h2 {
+            color: var(--color-white);
+            margin-bottom: 30px;
+        }
+        
+        .emotional-call h2::after {
+            background: var(--color-white);
+        }
+        
+        .emotional-call p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        .emotional-call .btn-secondary {
+            border-color: var(--color-white);
+            color: var(--color-white);
+        }
+        
+        .emotional-call .btn-secondary:hover {
+            background: var(--color-white);
+            color: var(--color-gold);
+        }
+        
+        /* ========================================
+           SEÇÃO FAQ
+           ======================================== */
+        
+        .faq {
+            background: var(--color-white);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid var(--color-border);
+            padding: 25px 0;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .faq-question h4 {
+            color: var(--color-black);
+            margin: 0;
+            font-size: 1.1rem;
+            flex: 1;
+        }
+        
+        .faq-toggle {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-size: 1.2rem;
+            transition: var(--transition-smooth);
+            flex-shrink: 0;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+            color: var(--color-text);
+            margin-top: 0;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            margin-top: 20px;
+        }
+        
+        /* ========================================
+           FOOTER
+           ======================================== */
+        
+        footer {
+            background: var(--color-black);
+            color: var(--color-champagne);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--color-gold);
+            margin-bottom: 20px;
+        }
+        
+        .footer-section p {
+            color: var(--color-champagne);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: var(--color-champagne);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+        
+        .footer-links a:hover {
+            color: var(--color-gold);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-rose-nude));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid var(--color-border);
+            padding-top: 30px;
+            text-align: center;
+            color: var(--color-champagne);
+            font-size: 0.9rem;
+        }
+        
+        /* ========================================
+           ACESSIBILIDADE
+           ======================================== */
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- ========================================
+         HEADER E NAVEGAÇÃO
+         ======================================== -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">ROBERTA SILVA</a>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <nav id="nav">
+                    <a href="#hero">Início</a>
+                    <a href="#authority">Sobre</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#before-after">Resultados</a>
+                    <a href="#testimonials">Depoimentos</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria" class="cta-header" target="_blank">WhatsApp</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Desvende a Beleza Única dos Seus Cabelos</h1>
+                    <p class="subheadline">Transformação e Autoestima com Técnicas Premium</p>
+                    <p>Mais do que um corte, uma experiência que realça sua essência e eleva sua confiança. Descubra como cabelos bem cuidados podem transformar completamente sua autoestima e presença.</p>
+                    <div class="hero-cta">
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria" class="btn btn-primary" target="_blank">Agende Agora</a>
+                        <a href="#services" class="btn btn-secondary">Conheça os Serviços</a>
+                    </div>
+                    <div class="credibility-badges">
+                        <div class="badge">
+                            <div class="badge-icon">15+</div>
+                            <div class="badge-text">
+                                <h4>Anos</h4>
+                                <p>De Experiência</p>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">2K+</div>
+                            <div class="badge-text">
+                                <h4>Clientes</h4>
+                                <p>Satisfeitas</p>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">98%</div>
+                            <div class="badge-text">
+                                <h4>Satisfação</h4>
+                                <p>Garantida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/500x600/d4af37/ffffff?text=Especialista+em+Cabelos" alt="Especialista em Cabelos Femininos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE AUTORIDADE
+         ======================================== -->
+    <section class="authority" id="authority">
+        <div class="container">
+            <div class="authority-grid">
+                <div class="authority-image">
+                    <img src="https://via.placeholder.com/450x550/f7e8d8/1a1a1a?text=Profissional+Certificada" alt="Profissional Certificada">
+                </div>
+                <div class="authority-content">
+                    <h2>Autoridade e Excelência</h2>
+                    <p>Com mais de 15 anos dedicados à arte de transformar cabelos, construí uma reputação baseada em resultados excepcionais, técnicas inovadoras e atendimento que vai além das expectativas.</p>
+                    
+                    <div class="experience-item">
+                        <h4>Experiência Profissional</h4>
+                        <p>Trajetória de sucesso em salões premium, participação em eventos internacionais de beleza e desenvolvimento contínuo de novas técnicas.</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4>Certificações Internacionais</h4>
+                        <p>Certificada em técnicas avançadas de coloração, reconstrução capilar e tratamentos premium por instituições reconhecidas mundialmente.</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4>Diferenciais Competitivos</h4>
+                        <p>Atendimento 100% personalizado, diagnóstico capilar detalhado, uso de produtos de alta qualidade e garantia de satisfação em todos os procedimentos.</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4>Filosofia de Trabalho</h4>
+                        <p>Acredito que cada cliente é única. Meu objetivo é potencializar a beleza natural de cada pessoa, respeitando suas características individuais e desejos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE SERVIÇOS
+         ======================================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serviços Premium</h2>
+                <p>Descubra nossa linha completa de serviços desenvolvidos para transformar seus cabelos e elevar sua autoestima.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">✂️</div>
+                    <h3>Corte Feminino</h3>
+                    <p>Cortes personalizados que realçam suas características faciais e estilo pessoal, utilizando técnicas modernas e precisão profissional.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">🎨</div>
+                    <h3>Coloração</h3>
+                    <p>Colorações sofisticadas com produtos premium, desde tons naturais até cores vibrantes, sempre respeitando a saúde dos cabelos.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">✨</div>
+                    <h3>Mechas</h3>
+                    <p>Mechas estratégicas que iluminam o rosto e criam profundidade, com técnicas que minimizam danos e maximizam o resultado.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">💆</div>
+                    <h3>Reconstrução Capilar</h3>
+                    <p>Tratamentos intensivos que restauram cabelos danificados, devolvendo brilho, maciez e força aos fios.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">👑</div>
+                    <h3>Tratamentos Premium</h3>
+                    <p>Protocolos exclusivos de hidratação, nutrição e revitalização para cabelos impecáveis e saudáveis.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">💬</div>
+                    <h3>Consultoria Personalizada</h3>
+                    <p>Sessões de consultoria onde analisamos seus cabelos, estilo de vida e objetivos para criar um plano de cuidados personalizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE BENEFÍCIOS
+         ======================================== -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Benefícios Transformadores</h2>
+                <p>O que você ganha ao escolher nossos serviços premium.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item scroll-reveal">
+                    <div class="benefit-icon">💪</div>
+                    <h4>Melhor Autoestima</h4>
+                    <p>Cabelos impecáveis elevam sua confiança e presença em qualquer ambiente.</p>
+                </div>
+                <div class="benefit-item scroll-reveal">
+                    <div class="benefit-icon">🌟</div>
+                    <h4>Visual Renovado</h4>
+                    <p>Transformação estética que reflete sua personalidade e estilo único.</p>
+                </div>
+                <div class="benefit-item scroll-reveal">
+                    <div class="benefit-icon">🎯</div>
+                    <h4>Atendimento Personalizado</h4>
+                    <p>Cada sessão é customizada para suas necessidades específicas e desejos.</p>
+                </div>
+                <div class="benefit-item scroll-reveal">
+                    <div class="benefit-icon">🚀</div>
+                    <h4>Técnicas Atualizadas</h4>
+                    <p>Métodos inovadores que garantem resultados superiores e duradouros.</p>
+                </div>
+                <div class="benefit-item scroll-reveal">
+                    <div class="benefit-icon">✅</div>
+                    <h4>Produtos de Alta Qualidade</h4>
+                    <p>Utilizamos apenas produtos premium que garantem excelência e segurança.</p>
+                </div>
+                <div class="benefit-item scroll-reveal">
+                    <div class="benefit-icon">❤️</div>
+                    <h4>Cuidado Genuíno</h4>
+                    <p>Tratamento com amor e dedicação que você merece e que faz toda a diferença.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO ANTES E DEPOIS
+         ======================================== -->
+    <section class="before-after" id="before-after">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transformações Reais</h2>
+                <p>Veja os resultados incríveis que nossos clientes alcançaram.</p>
+            </div>
+            <div class="before-after-grid">
+                <div class="comparison-card scroll-reveal">
+                    <div class="comparison-images">
+                        <img src="https://via.placeholder.com/300x300/cccccc/666666?text=Antes" alt="Antes">
+                        <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Depois" alt="Depois">
+                        <span class="comparison-label before">Antes</span>
+                        <span class="comparison-label after">Depois</span>
+                    </div>
+                    <div class="comparison-info">
+                        <h4>Transformação Completa</h4>
+                        <p>Reconstrução capilar + coloração premium</p>
+                        <p class="comparison-highlight">Resultado: Cabelos revitalizados e radiantes</p>
+                    </div>
+                </div>
+                <div class="comparison-card scroll-reveal">
+                    <div class="comparison-images">
+                        <img src="https://via.placeholder.com/300x300/cccccc/666666?text=Antes" alt="Antes">
+                        <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Depois" alt="Depois">
+                        <span class="comparison-label before">Antes</span>
+                        <span class="comparison-label after">Depois</span>
+                    </div>
+                    <div class="comparison-info">
+                        <h4>Corte e Mechas</h4>
+                        <p>Corte feminino + mechas estratégicas</p>
+                        <p class="comparison-highlight">Resultado: Volume e dimensão perfeitos</p>
+                    </div>
+                </div>
+                <div class="comparison-card scroll-reveal">
+                    <div class="comparison-images">
+                        <img src="https://via.placeholder.com/300x300/cccccc/666666?text=Antes" alt="Antes">
+                        <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Depois" alt="Depois">
+                        <span class="comparison-label before">Antes</span>
+                        <span class="comparison-label after">Depois</span>
+                    </div>
+                    <div class="comparison-info">
+                        <h4>Coloração Sofisticada</h4>
+                        <p>Coloração premium com técnica balayage</p>
+                        <p class="comparison-highlight">Resultado: Tons naturais e luminosos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE DEPOIMENTOS
+         ======================================== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Depoimentos de Clientes</h2>
+                <p>Ouça as histórias de transformação de nossas clientes satisfeitas.</p>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Nunca tive um atendimento tão profissional e cuidadoso. Meus cabelos foram completamente transformados e agora tenho muito mais confiança em mim mesma. Recomendo de coração!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-info">
+                            <h4>Marina Silva</h4>
+                            <p>Cliente há 3 anos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"A especialista entendeu exatamente o que eu queria. O resultado superou minhas expectativas! Meus cabelos estão lindos, saudáveis e brilhosos. Voltarei com certeza!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-info">
+                            <h4>Aline Costa</h4>
+                            <p>Cliente há 2 anos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Que experiência incrível! Desde o acolhimento até o resultado final, tudo foi perfeito. Sinto que meus cabelos estão sendo cuidados por alguém que realmente se importa. Muito obrigada!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">C</div>
+                        <div class="testimonial-info">
+                            <h4>Camila Santos</h4>
+                            <p>Cliente há 1 ano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <div class="carousel-dot active" data-slide="0"></div>
+                <div class="carousel-dot" data-slide="1"></div>
+                <div class="carousel-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE ESTATÍSTICAS
+         ======================================== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 data-target="2500">0</h3>
+                    <p>Clientes Atendidas</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-target="15">0</h3>
+                    <p>Anos de Experiência</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-target="98">0</h3>
+                    <p>% de Satisfação</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-target="5000">0</h3>
+                    <p>Procedimentos Realizados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE PROCESSO
+         ======================================== -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Processo de Atendimento</h2>
+                <p>Conheça as etapas que garantem seu sucesso e satisfação.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step scroll-reveal">
+                    <div class="step-number">1</div>
+                    <h4>Agendamento</h4>
+                    <p>Escolha o serviço e horário que melhor se adequa à sua agenda.</p>
+                    <div class="step-arrow">→</div>
+                </div>
+                <div class="process-step scroll-reveal">
+                    <div class="step-number">2</div>
+                    <h4>Diagnóstico</h4>
+                    <p>Análise completa do seu cabelo e discussão dos objetivos.</p>
+                    <div class="step-arrow">→</div>
+                </div>
+                <div class="process-step scroll-reveal">
+                    <div class="step-number">3</div>
+                    <h4>Procedimento</h4>
+                    <p>Execução profissional com técnicas premium e produtos de qualidade.</p>
+                    <div class="step-arrow">→</div>
+                </div>
+                <div class="process-step scroll-reveal">
+                    <div class="step-number">4</div>
+                    <h4>Resultado</h4>
+                    <p>Transformação visível que realça sua beleza natural.</p>
+                    <div class="step-arrow">→</div>
+                </div>
+                <div class="process-step scroll-reveal">
+                    <div class="step-number">5</div>
+                    <h4>Acompanhamento</h4>
+                    <p>Suporte contínuo e dicas de cuidados para manter os resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE GALERIA
+         ======================================== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria de Trabalhos</h2>
+                <p>Explore nossa coleção de transformações e inspirações.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal" data-gallery="1">
+                    <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Trabalho+1" alt="Trabalho 1">
+                    <div class="gallery-overlay">🔍</div>
+                </div>
+                <div class="gallery-item scroll-reveal" data-gallery="2">
+                    <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Trabalho+2" alt="Trabalho 2">
+                    <div class="gallery-overlay">🔍</div>
+                </div>
+                <div class="gallery-item scroll-reveal" data-gallery="3">
+                    <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Trabalho+3" alt="Trabalho 3">
+                    <div class="gallery-overlay">🔍</div>
+                </div>
+                <div class="gallery-item scroll-reveal" data-gallery="4">
+                    <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Trabalho+4" alt="Trabalho 4">
+                    <div class="gallery-overlay">🔍</div>
+                </div>
+                <div class="gallery-item scroll-reveal" data-gallery="5">
+                    <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Trabalho+5" alt="Trabalho 5">
+                    <div class="gallery-overlay">🔍</div>
+                </div>
+                <div class="gallery-item scroll-reveal" data-gallery="6">
+                    <img src="https://via.placeholder.com/300x300/d4af37/ffffff?text=Trabalho+6" alt="Trabalho 6">
+                    <div class="gallery-overlay">🔍</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         LIGHTBOX
+         ======================================== -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img class="lightbox-image" src="" alt="">
+            <span class="lightbox-close">&times;</span>
+        </div>
+    </div>
+
+    <!-- ========================================
+         SEÇÃO EMOCIONAL
+         ======================================== -->
+    <section class="emotional-call">
+        <div class="container">
+            <h2>Você Merece Sentir-se Bonita</h2>
+            <p>Sua beleza é única e merece ser celebrada. Não é apenas sobre cabelos perfeitos, é sobre autoestima, confiança e transformação pessoal. Deixe-nos ajudar você a descobrir o melhor de si mesma.</p>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria" class="btn btn-secondary" target="_blank">Comece Sua Transformação Hoje</a>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO FAQ
+         ======================================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Encontre respostas para as dúvidas mais comuns sobre nossos serviços.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Quanto tempo dura cada procedimento?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <p class="faq-answer">O tempo varia de acordo com o serviço escolhido. Um corte simples leva cerca de 45 minutos, enquanto colorações e tratamentos podem levar entre 1 a 3 horas. Faremos uma estimativa precisa durante o agendamento.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Quais produtos vocês utilizam?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <p class="faq-answer">Utilizamos exclusivamente produtos premium de marcas internacionais reconhecidas. Todos os produtos são dermatologicamente testados e seguros para todos os tipos de cabelo.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Como devo cuidar dos meus cabelos em casa?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <p class="faq-answer">Fornecemos um plano personalizado de cuidados para cada cliente. Isso inclui recomendações de produtos, frequência de lavagem e dicas de manutenção específicas para seu tipo de cabelo.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Vocês oferecem garantia de satisfação?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <p class="faq-answer">Sim! Garantimos 100% de satisfação com todos os nossos serviços. Se não ficar satisfeita, oferecemos ajustes sem custo adicional.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Qual é a política de cancelamento?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <p class="faq-answer">Solicitamos 24 horas de antecedência para cancelamentos sem taxa. Cancelamentos com menos de 24 horas podem estar sujeitos a uma taxa de 50% do valor do serviço.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nós</h4>
+                    <p>Especialista em transformação capilar com mais de 15 anos de experiência. Dedicada a oferecer serviços premium que elevam a autoestima e a confiança de nossas clientes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#authority">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📍 São Paulo, SP</p>
+                    <p>📞 (11) 9999-9999</p>
+                    <p>📧 contato@robertasilva.com</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" class="social-icon" target="_blank">f</a>
+                        <a href="https://instagram.com" class="social-icon" target="_blank">📷</a>
+                        <a href="https://wa.me/5511999999999" class="social-icon" target="_blank">💬</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Especialista em Cabelos Femininos. Todos os direitos reservados. | Desenvolvido com ❤️ para sua beleza.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JAVASCRIPT
+         ======================================== -->
+    <script>
+        // ========================================
+        // MENU MOBILE
+        // ========================================
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // ========================================
+        // HEADER STICKY
+        // ========================================
+        const header = document.getElementById('header');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        // ========================================
+        // SCROLL REVEAL
+        // ========================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ========================================
+        // CONTADOR DE ESTATÍSTICAS
+        // ========================================
+        function animateCounter(element, target, duration = 2000) {
+            let current = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString('pt-BR');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString('pt-BR');
+                }
+            }, 16);
+        }
+
+        // Observar seção de estatísticas
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('[data-target]').forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        animateCounter(stat, target);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // ========================================
+        // CARROSSEL DE DEPOIMENTOS
+        // ========================================
+        let currentSlide = 0;
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        const carouselDots = document.querySelectorAll('.carousel-dot');
+
+        function showSlide(n) {
+            testimonialCards.forEach(card => card.classList.remove('active'));
+            carouselDots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonialCards[n].classList.add('active');
+            carouselDots[n].classList.add('active');
+        }
+
+        carouselDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Auto-play carrossel
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % testimonialCards.length;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // ========================================
+        // FAQ ACORDEÃO
+        // ========================================
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Fechar outros itens
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle item atual
+                item.classList.toggle('active');
+            });
+        });
+
+        // ========================================
+        // LIGHTBOX GALERIA
+        // ========================================
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        const lightboxClose = document.querySelector('.lightbox-close');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                lightboxImage.src = img.src;
+                lightboxImage.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Fechar lightbox com ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // ========================================
+        // LAZY LOADING DE IMAGENS
+        // ========================================
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img').forEach(img => imageObserver.observe(img));
+        }
+
+        // ========================================
+        // SMOOTH SCROLL
+        // ========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ========================================
+        // PERFORMANCE: PRELOAD CRÍTICO
+        // ========================================
+        window.addEventListener('load', () => {
+            // Otimizações adicionais após carregamento
+            console.log('Landing page carregada com sucesso!');
+        });
+    </script>
+</body>
+</html>
